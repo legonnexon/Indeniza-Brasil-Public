@@ -10,8 +10,8 @@
   <main class="bg-sky-600 p-5 grid place-items-center">
     <div class="container flex justify-between items-center">
       <div class="flex gap-3">
-        <img class="bg-slate-600" src="" alt="" width="48px" height="48px">
-        <div class="flex-col font-semibold tracking-wide text-xl">
+        <img class="" src="./img/logo-simples.png" alt="" width="48px" height="48px">
+        <div class="flex-col font-medium tracking-wider text-xl">
           <p>Indeniza</p>
           <p>Brasil</p>
         </div>
@@ -26,10 +26,20 @@
         <a href="" target="_blank">
           <iconify-icon icon="simple-icons:x" width="32" height="32"></iconify-icon>        
         </a>
-        
       </div>
-      <div class="block sm:hidden">
-        <iconify-icon icon="ci:hamburger-lg" width="38" height="38"></iconify-icon>
+      <div class="dropdown relative sm:hidden">
+        <button class="link"><iconify-icon class="" icon="ci:hamburger-lg" width="38" height="38"></iconify-icon></button>
+        <div class="dropdown-menu duration-200 absolute right-0 top-full bg-white p-5 rounded shadow-lg flex flex-col gap-5 opacity-0 hover:opacity-100" id="dropdown-content">
+          <a href="https://www.facebook.com/Indenizabr" target="_blank">
+            <iconify-icon icon="bi:facebook" width="48" height="48"></iconify-icon>
+          </a>
+          <a href="https://www.instagram.com/indenizabr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+            <iconify-icon icon="teenyicons:instagram-solid" width="48" height="48"></iconify-icon>
+          </a>
+          <a href="" target="_blank">
+            <iconify-icon icon="simple-icons:x" width="48" height="48"></iconify-icon>        
+          </a>
+        </div>
       </div>
     </div>
   </main>
@@ -39,7 +49,7 @@
       <div class="text-left">
         <p class="text-4xl font-bold mb-3">Tenha a sua indenização apropriada</p>
         <p class="text-slate-600 font-bold tracking-wide mb-3">Neste site sabera como obter a indenização que você merece com agilidade e eficiência.</p>
-        <a href="#contato"><button class="bg-sky-300 tracking-wide font-semibold rounded font-medium px-4 py-3 ease-linear duration-200 hover:bg-sky-600 hover:text-white">Acessar Agora</button></a>
+        <a href="#contato"><button class="bg-sky-300 tracking-wide font-semibold rounded px-4 py-3 ease-linear duration-200 hover:bg-sky-600 hover:text-white">Acessar Agora</button></a>        
       </div>
     </div>
   </section>
@@ -70,9 +80,9 @@
     </div>
   </section>
   <!-- frase intuitiva -->
-  <section class="bg-slate-100 grid place-items-center p-5">
+  <section class="bg-slate-100 grid place-items-center">
     <div class="container p-5 drop-shadow-2xl grid place-items-center">
-      <div class="grid grid-cols-1 place-items-center gap-4 sm:grid-cols-2 p-12">
+      <div class="grid grid-cols-1 place-items-center gap-4 sm:grid-cols-2 p-5">
         <div class="grid place-items-center mb-4 z-20 sm:mb-0">
           <img class="rounded-xl cover" src="./img/jovem-bonita-caucasiana-satisfeita-segurando-a-mao-na-laranja_141793-92701.jpg" alt="">
         </div>
@@ -85,23 +95,23 @@
   </section>
   <!-- Nossos Clientes -->
   <section class="bg-slate-800 grid place-items-center">
-    <div class="container flex flex-wrap justify-evenly gap-5 p-5 place-items-center">
+    <div class="container p-5 grid grid-cols-1 gap-5 place-items-center sm:grid-cols-3">
       <div class="mb-4 text-center sm:mb-0">
-        <div class="w-80 h-72 bg-cover bg-center rounded-xl mb-2 drop-shadow-2xl" style="background-image: url(./img/pessoa1.jpg);"></div>
+        <img src="./img/pessoa1.jpg" class="rounded-xl mb-2 drop-shadow-2xl" style="width: auto; height: 200px; object-fit: cover;">
         <span class="text-slate-200 tracking-wide font-semibold">
           <p class="text-2xl">Cliente 1</p>
           <p class="text-sm text-slate-400">"Achei o metodo muito rápido"</p>
         </span>
       </div>   
       <div class="mb-4 text-center sm:mb-0">
-        <div class="w-80 h-72 bg-cover bg-center rounded-xl mb-2 drop-shadow-2xl" style="background-image: url(./img/pessoa2.jpg);"></div>
+        <img src="./img/pessoa2.jpg" class="rounded-xl mb-2 drop-shadow-2xl" style="width: auto; height: 200px; object-fit: cover;">
         <span class="text-slate-200 tracking-wide font-semibold">
           <p class="text-2xl">Cliente 2</p>
           <p class="text-sm text-slate-400">"Irei novamente"</p>
         </span>
       </div>   
       <div class="mb-4 text-center sm:mb-0">
-        <div class="w-80 h-72 bg-cover bg-center rounded-xl mb-2 drop-shadow-2xl" style="background-image: url(./img/pessoa3.jpg);"></div>
+        <img src="./img/pessoa1.jpg" class="rounded-xl mb-2 drop-shadow-2xl cover" style="width: auto; height: 200px; object-fit: cover;">
         <span class="text-slate-200 tracking-wide font-semibold">
           <p class="text-2xl">Cliente 3</p>
           <p class="text-sm text-slate-400">"Gostei de como as coisas funcionaram"</p>
@@ -119,7 +129,7 @@
           <p>Conte com agente para assegurar suas viagens, acidentes, impostos e muito mais.</p>
         </div>
         <div class="grid place-items-center">
-          <img class="rounded-xl cover" src="./img/grupo-de-pessoas-diversas-tendo-uma-reuniao-de-negocios.jpg" alt="">
+          <img class="rounded-xl cover" src="../img/grupo-de-pessoas-diversas-tendo-uma-reuniao-de-negocios.jpg" alt="">
         </div>
       </div>
     </div>
@@ -143,17 +153,18 @@
               <input class="w-full bg-slate-200 rounded px-3 py-2" type="text" id="email">
             </div>
           </div>
-          <div>
+          <div class="mb-3">
             <label for="mensagem">Mensagem</label>
-            <textarea class="w-full h-20 bg-slate-200 rounded" name="" id="mensagem"></textarea>
+            <textarea class="w-full p-3 h-20 bg-slate-200 rounded" id="mensagem"></textarea>
           </div>
+          <button onclick="enviarEmail()" class="w-full bg-sky-300 tracking-wider font-semibold rounded px-4 py-3 ease-linear duration-200 hover:bg-sky-600 hover:text-white" type="button">Mandar Mensagem</button>
         </form>
       </div>
     </div>
   </section>    
   <footer class="flex flex-wrap gap-4 justify-between bg-slate-900 text-white p-12">
     <div class="flex gap-3">
-      <img class="bg-slate-600" src="" alt="" width="48px" height="48px">
+      <img class="text-white" src="./img/logo-sgv.svg" alt="" width="48px" height="48px">
       <div class="flex-col font-semibold tracking-wide text-xl">
         <p>Indeniza</p>
         <p>Brasil</p>
@@ -174,5 +185,27 @@
       <p class="text-sm text-slate-400">Indeniza Brasil &copy;</p>
     </div>
   </footer>
+
+  <script>
+    function enviarEmail() {
+        // Recuperar a mensagem do formulário
+        var mensagem = document.getElementById("mensagem").value;
+        var nome = document.getElementById("nome").value;
+
+        // Endereço de e-mail para onde você deseja enviar a mensagem
+        var destinatario = "indenizabrasil@gmail.com";
+
+        // Assunto do e-mail
+        var assunto = "Nova mensagem de " + nome + " do formulário de contato Indeniza Brasil!";
+
+        // Montar o link "mailto" com os parâmetros
+        var mailtoLink = "mailto:" + destinatario +
+                         "?subject=" + encodeURIComponent(assunto) +
+                         "&body=" + encodeURIComponent(mensagem);
+
+        // Abrir o cliente de e-mail padrão com o link "mailto"
+        window.location.href = mailtoLink;
+    }
+</script>
 </body>
 </html>
