@@ -46,7 +46,7 @@
   </main>
   <!-- Seção Inicial -->
   <section class="grid place-items-center p-3 bg-cover bg-center" style="background-image: url(./img/aviao-voando.jpg); height: 40vw;">
-    <div class="w-3/4 h-full relative">
+    <div class="container h-full relative">
       <p class="absolute bottom-0 left-0 text-5xl font-extrabold tracking-tighter sm:text-9xl">
         <span class="bg-clip-text text-transparent bg-gradient-to-t from-green-500 to-green-600 pr-1">INDENIZA</span> 
         <span class="bg-clip-text text-transparent bg-gradient-to-t from-amber-400 to-amber-500">BRASIL</span>
@@ -60,7 +60,7 @@
   </section>
   <!-- Areas Atuadas -->
   <section class="bg-slate-100 grid place-items-center">
-    <div class="container flex flex-wrap gap-3 justify-evenly p-5 place-items-center">
+    <div class="container grid grid-cols-1 gap-5 justify-evenly p-5 place-items-center sm:grid-cols-2 sm:gap-5 lg:grid-cols-4 lg:gap-28">
       <div class="mb-4 text-center sm:mb-0">
         <div class="w-48 h-80 bg-cover bg-center rounded-xl mb-2" style="background-image: url(./img/empresario-segurando-bagagem-esperando-a-chegada-do-aeroporto-gerada-por-ia.jpg);"></div>
         <p class="text-2xl text-slate-800 tracking-wide font-semibold">Voos Atrasados</p>
@@ -94,29 +94,94 @@
     </div>
   </section>
   <!-- Nossos Clientes -->
-  <section class="grid place-items-center">
-    <div class="container p-5 grid grid-cols-1 gap-5 place-items-center sm:grid-cols-3">
-      <div class="mb-4 text-center sm:mb-0">
-        <img src="./img/pessoa1.jpg" class="rounded-xl mb-2 drop-shadow-2xl" style="width: auto; height: 200px; object-fit: cover;">
-        <span class="text-slate-800 tracking-wide font-semibold">
-          <p class="text-2xl">Cliente 1</p>
-          <p class="text-sm text-slate-600">"Achei o metodo muito rápido"</p>
-        </span>
-      </div>   
-      <div class="mb-4 text-center sm:mb-0">
-        <img src="./img/pessoa2.jpg" class="rounded-xl mb-2 drop-shadow-2xl" style="width: auto; height: 200px; object-fit: cover;">
-        <span class="text-slate-800 tracking-wide font-semibold">
-          <p class="text-2xl">Cliente 2</p>
-          <p class="text-sm text-slate-600">"Irei novamente"</p>
-        </span>
-      </div>   
-      <div class="mb-4 text-center sm:mb-0">
-        <img src="./img/pessoa1.jpg" class="rounded-xl mb-2 drop-shadow-2xl cover" style="width: auto; height: 200px; object-fit: cover;">
-        <span class="text-slate-800 tracking-wide font-semibold">
-          <p class="text-2xl">Cliente 3</p>
-          <p class="text-sm text-slate-600 overflow-auto">"Gostei de como as coisas funcionaram"</p>
-        </span>
-      </div>    
+  <section class="bg-slate-100 grid place-items-center">
+    <div class="container bg-salte-100 p-5 flex flex-wrap gap-5 justify-evenly lg:flex-nowrap">
+      <!-- Pessoa 1 -->
+      <div class="w-80 h-auto bg-white rounded-2xl p-5 shadow-md">
+        <div class="flex justify-evenly items-center mb-5">
+          <img src="https://lh3.googleusercontent.com/a-/ALV-UjVJO_Rqf2ceEu8fY5wV5tMziyMHfQR9Bm8yIFI0xNQUFkKZ=w60-h60-p-rp-mo-br100" alt="">
+          <p>Elisama Cristina</p>
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="45" viewBox="0 0 48 48">
+            <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="flex gap-2 mb-2">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+          </div>
+          <p>ADVOGADOS DE EXCELÊNCIA E COM MUITO EMPENHO E DEDICAÇÃO AQUILO QUE FAZEM</p>
+        </div>
+      </div>
+
+      <!-- Pessoa 2 -->
+      <div class="w-80 h-auto bg-white rounded-2xl p-5 shadow-md">
+        <div class="flex justify-evenly items-center mb-5">
+          <img src="https://lh3.googleusercontent.com/a-/ALV-UjXqcPmL_vDc00lssM0Zz8Ewbr-iLZsYtxdFd1UpyMR0q5gM=w60-h60-p-rp-mo-ba2-br100" alt="">
+          <p>Luiza Tunes Soares</p>
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="45" viewBox="0 0 48 48">
+            <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="flex gap-2 mb-2">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+          </div>
+          <p>Excelente escritório, advogados extremamente competentes e qualificados! Super recomendo!!</p>
+        </div>
+      </div>
+
+      <!-- Pessoa 3 -->
+      <div class="w-80 h-auto bg-white rounded-2xl p-5 shadow-md">
+        <div class="flex justify-evenly items-center mb-5">
+          <img src="https://lh3.googleusercontent.com/a-/ALV-UjV9jCkazJRD_tjB57cyAP2_HqmiIsyHM_jTfAoZHrB0oXbC=w60-h60-p-rp-mo-br100" alt="">
+          <p>Vitor Confortini</p>
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="45" viewBox="0 0 48 48">
+            <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="flex gap-2 mb-2">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+          </div>
+          <p>Atendimento e resolução com precisão e eficácia</p>
+        </div>
+      </div>
+
+      <!-- Pessoa 4 -->
+      <div class="w-80 h-auto bg-white rounded-2xl p-5 shadow-md">
+        <div class="flex justify-evenly items-center mb-5">
+          <img src="https://lh3.googleusercontent.com/a-/ALV-UjUJ56NeW8KskxdIuNMuFUUIOyOxeJp_edhcu_V8IZ4J0A=w60-h60-p-rp-mo-br100" alt="">
+          <p>Daniela Guedes</p>
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="45" viewBox="0 0 48 48">
+            <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="flex gap-2 mb-2">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+            <img src="./img/star.png" alt="" width="16px" height="16px">
+          </div>
+          <p>São excelentes profissionais.
+            Parcerias de trabalho sempre excepcionais.
+            Recomendo!</p>
+        </div>
+      </div>      
+      </div>  
     </div>
   </section>
   <!-- Sobre Nois -->
